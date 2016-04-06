@@ -1,0 +1,332 @@
+.container {
+	margin:0 auto;
+	max-width: 60rem;
+	padding: 0 2rem;
+
+	@media screen and (max-width: 60rem) {
+		max-width: 55rem;
+	}
+
+	@media screen and (max-width: 50rem) {
+		max-width: 45rem;
+	}
+
+	@media screen and (max-width: 40rem) {
+		max-width: 35rem;
+		padding: 1.5rem;
+	}
+
+	@media screen and (max-width: 30rem) {
+		padding: 1rem;
+	}
+}
+
+.container blockquote p {
+	position: relative;
+}
+
+.hero {
+	background-attachment: fixed;
+	background-color: $building-grey;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+
+	@media screen and (max-width: 60rem) {
+		background-attachment: scroll;
+	}
+}
+
+.hero-one {
+	background-image: url('img/h1.jpg');
+	padding-bottom: 2rem;
+	padding-top: 10rem;
+
+	a {
+		background: rgba(darken($building-grey, 30%), .2);
+		padding: 0 .3rem;
+		//transition: background .5s ease-in-out;
+
+		&:hover {
+			background: none;
+		}
+	}
+
+	@media screen and (max-width: 40rem) {
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+	}
+
+	@media screen and (max-height: 900px) {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	@media screen and (max-width: 30rem) and (max-height: 500px) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	
+	& .hero-one__about {
+		animation: fadeindelayed 1.5s;
+		font-size: 2.4rem;
+		margin-bottom: 7rem;
+
+		@media screen and (max-width: 60rem) {
+			margin-bottom: 4rem;
+		}
+
+		@media screen and (max-width: 40rem) {
+			font-size: 1.8rem;
+		}
+
+		@media screen and (max-width: 30rem) {
+			font-size: 1.6rem;
+		}
+
+		@media screen and (max-height: 900px) {
+			margin-bottom: 3rem;
+		}
+
+		@media screen and (max-width: 30rem) and (max-height: 500px) {
+			font-size: 1.3rem;
+			margin-bottom: 2rem;
+		}
+	}
+	
+	& .hero-one__opening {
+		animation: fadeindelayed 3.5s;
+		font-size: 4rem;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+		@media screen and (max-width: 40rem) {
+			font-size: 3rem;
+		}
+
+		@media screen and (max-width: 30rem) {
+			font-size: 2.5rem;
+		}
+
+		@media screen and (max-width: 30rem) and (max-height: 500px) {
+			font-size: 2rem;
+		}
+	}
+}
+
+.hero-two {
+	background-image: url('img/h2.jpg');
+	padding-bottom: 3rem;
+	padding-top: 10rem;
+
+	& .hero-two__about {
+		margin-bottom: 6rem;
+
+		@media screen and (max-width: 40rem) {
+			margin-bottom: 5rem;
+		}
+
+		@media screen and (max-width: 30rem) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	& .hero-two__elsewhere {
+		display: block;
+		margin-bottom: 6rem;
+
+		@media screen and (max-width: 40rem) {
+			margin-bottom: 4rem;
+		}
+
+		@media screen and (max-width: 30rem) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.hero-two__elsewhere a {
+		display: inline-block;
+		margin: 0 .8rem;
+
+		@media screen and (max-width: 30rem) {
+			margin: 0 .5rem;
+		}
+
+		@media screen and (max-width: 20rem) {
+			margin: 0 .3rem;
+		}
+	}
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.5rem;
+		padding-top: 6rem;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.5rem;
+		padding-bottom: 1rem;
+		padding-top: 2rem;
+	}
+
+	@media screen and (max-width: 20rem) {
+		font-size: 1.3rem;
+		padding-top: 2rem;
+	}
+
+	@media screen and (max-width: 30rem) and (max-height: 500px) {
+		font-size: 1.2rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+}
+
+.pictures:after {
+	content:"";
+	display: block;
+	clear:both;
+}
+
+.pictures img {
+	display: block;
+	float: left;
+	width: 33.33%;
+}
+
+.quote {
+	background: $building-red;
+	background-attachment: fixed;
+	background-image: url('img/b.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 2.2rem;
+	padding: 7rem 0;
+	text-align: right;
+
+	& p {
+		margin-bottom: 1rem;
+	}
+
+	@media screen and (max-width: 60rem) {
+		background-attachment: scroll;
+		font-size: 2rem;
+	}
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.5rem;
+		padding: 5rem 0;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.3rem;
+		padding: 4rem 0;
+	}
+
+	@media screen and (max-width: 30rem) and (max-height: 500px) {
+		font-size: 1.1rem;
+		padding: 2rem 0;
+	}
+}
+
+.quote a {
+	background: rgba(darken($building-red, 15%), .2);
+	padding: 0 .3rem;
+
+	&:hover {
+		background: none;
+	}
+}
+
+.about {
+	background: $building-white;
+	color: $building-grey;
+	font-size: 1.9rem;
+	padding: 5.5rem 0;
+	position: relative;
+	text-align: left;
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.5rem;
+		padding: 3rem 0;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.3rem;
+		padding: 3rem 0;
+	}
+
+	@media screen and (max-width: 30rem) and (max-height: 500px) {
+		font-size: 1.1rem;
+		padding: 1rem 0;
+	}
+}
+
+.about::before,
+.about::after {
+	background: $building-white;
+	content: "";
+	display: block;
+	height: 80px;
+	left: 45%;
+	position: absolute;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 80px;
+	z-index: 10;
+
+	@media screen and (max-width: 40rem) {
+		height: 50px;
+		width: 50px;
+	}
+
+	@media screen and (max-width: 20rem) {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.about::before {
+	top: -40px;
+
+	@media screen and (max-width: 40rem) {
+		top: -25px;
+	}
+
+	@media screen and (max-width: 20rem) {
+		top: -15px;
+	}
+}
+
+.about::after {
+	bottom: -40px;
+
+	@media screen and (max-width: 40rem) {
+		bottom: -25px;
+	}
+
+	@media screen and (max-width: 20rem) {
+		bottom: -15px;
+	}
+}
+
+.about a {
+	background: darken($building-white, 3%);
+	color: $building-grey;
+	padding: 0 .3rem;
+
+	&:hover {
+		background: none;
+		color: darken($link-blue, 30%);
+	}
+}
+
+.addr {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}

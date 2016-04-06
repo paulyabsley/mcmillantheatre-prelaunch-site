@@ -1,0 +1,60 @@
+
+.svg-social-icon {
+	display: block;
+	fill: $building_white;
+	height: auto;
+	transition: fill .3s;
+	width: 5rem;
+	
+	&:hover {
+		fill: $link-blue;
+	}
+
+	@media screen and (max-width: 40rem) {
+		width: 3.5rem;
+	}
+
+	@media screen and (max-width: 30rem) {
+		width: 2.2rem;
+	}
+
+	@media screen and (max-width: 20rem) {
+		width: 2rem;
+	}
+}
+
+.svg-mcmillan-theatre-logo {
+	animation: fadein 3s;
+	fill: $building_white;
+	margin-bottom: 9rem;
+	width: 33%;
+
+	@media screen and (max-width: 60rem) {
+		width: 40%;
+	}
+
+	@media screen and (max-width: 50rem) {
+		margin-bottom: 7rem;
+		width: 45%;
+	}
+
+	@media screen and (max-width: 40rem) {
+		margin-bottom: 5rem;
+		width: 55%;
+	}
+
+	@media screen and (max-width: 30rem) {
+		margin-bottom: 5rem;
+		width: 60%;
+	}
+
+	// Height media queries need to go last because of specificity issues
+
+	@media screen and (max-height: 900px) {
+		margin-bottom: 3rem;
+	}
+
+	@media screen and (max-width: 30rem) and (max-height: 500px) {
+		margin-bottom: 1rem;
+	}
+}

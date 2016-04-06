@@ -1,0 +1,44 @@
+// Colours
+
+$building_red: #cd8d73;
+$building_white: #f6efe5;
+$building_grey: #3e4d52;
+$link_blue: #8ac5f3;
+$state_error: #c05238;
+$state_success: #71a26f;
+
+// Fonts
+
+@font-face{
+font-family:"Avenir Next W01 Cn Thin";
+src:url("fonts/4998b3c8-f377-458d-9143-48ca2f5643bf.eot?#iefix");
+src:url("fonts/4998b3c8-f377-458d-9143-48ca2f5643bf.eot?#iefix") format("eot"),url("fonts/f93a7ba1-8ac9-422b-85ab-09c9138324de.woff2") format("woff2"),url("fonts/98622b92-1cca-4c15-b19d-62b9c110cdb1.woff") format("woff"),url("fonts/c20684a6-2733-4568-9708-8c4a7dfb4a5c.ttf") format("truetype"),url("fonts/b126092f-08f5-4f0a-8f08-3e9fdbb5b21e.svg#b126092f-08f5-4f0a-8f08-3e9fdbb5b21e") format("svg");
+}
+@font-face{
+font-family:"AvenirNextW01-CnThinIta";
+src:url("fonts/6c9b8b7e-5e1a-4813-9a08-bef545cc4a12.eot?#iefix");
+src:url("fonts/6c9b8b7e-5e1a-4813-9a08-bef545cc4a12.eot?#iefix") format("eot"),url("fonts/df8a8fcc-2f61-4eeb-82c6-a317c4ab1c89.woff2") format("woff2"),url("fonts/4a25dc4d-e5c9-4fd1-8f90-c3558ecc4b93.woff") format("woff"),url("fonts/e9842e10-9c7b-481c-a354-9dcd65ea4ef0.ttf") format("truetype"),url("fonts/798dbe11-6b08-49bf-b9fb-686ae6189b51.svg#798dbe11-6b08-49bf-b9fb-686ae6189b51") format("svg");
+}
+
+// Font Stacks
+
+$font-family--fallback: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--thin: 'Avenir Next W01 Cn Thin', $font-family--fallback;
+$font-family--italic: 'AvenirNextW01-CnThinIta', $font-family--fallback;
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeindelayed {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+// Breakpoints
+
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1100px;

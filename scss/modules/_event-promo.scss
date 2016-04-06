@@ -1,0 +1,83 @@
+.event-promo {
+	background: rgba(125,165,187,.65);
+	margin-top: 1rem;
+	overflow: hidden;
+	padding-right: 1rem;    
+	animation: fadeindelayed 3.5s;
+}
+
+.event-promo img {
+	float: left;
+	margin-right: .5rem;
+	width:20%;
+
+	@media screen and (max-width: 50rem) {
+		width: 24%;
+	}
+
+	@media screen and (max-width: 40rem) {
+		width: 28%;
+	}
+
+	@media screen and (max-width: 30rem) {
+		margin-right: 1rem;
+		width: 25%;
+	}
+}
+
+.event-promo h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-top: 1rem;
+	margin-bottom: .8rem;
+
+	@media screen and (max-width: 60rem) {
+		font-size: 2.2rem;
+	}
+
+	@media screen and (max-width: 50rem) {
+		font-size: 2rem;
+		margin-bottom: .5rem;
+		margin-top: .5rem;
+	}
+
+	@media screen and (max-width: 40rem) {
+		font-size: 2rem;
+		margin-bottom: .4rem;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 2.1rem;
+		line-height: 1.1;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		margin-top: 1.7rem;
+		text-align: left;
+	}
+
+	@media screen and (max-width: 20rem) {
+		font-size: 1.5rem;
+		margin-bottom: .4rem;
+	}
+}
+
+.event-promo p {
+	font-size: 1.5rem;
+
+	@media screen and (max-width: 60rem) {
+		font-size: 1.3rem;
+	}
+
+	@media screen and (max-width: 50rem) {
+		font-size: 1.2rem;
+	}
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.1rem;
+	}
+
+	@media screen and (max-width: 30rem) {
+		clear: both;
+		padding: 1rem;
+	}
+}

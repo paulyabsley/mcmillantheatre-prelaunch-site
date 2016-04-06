@@ -1,0 +1,75 @@
+.upcoming-events {
+	/*background: rgba(173, 24, 46, .65);*/
+	background: rgba(125,165,187,.65);
+	margin-bottom: 3rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	padding: 2rem;
+	animation: fadeindelayed 2.5s;
+	transform: skewX(-15deg);
+	@media screen and (max-width: 40rem) {
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		transform: skewX(-10deg);
+	}
+	@media screen and (max-width: 30rem) {
+		margin-bottom: 2rem;
+		padding: 1rem;
+		transform: skewX(-9deg);
+	}
+}
+
+.upcoming-events.sunset-event {
+	background: url("img/sunset-boulevard.png");
+}
+
+.upcoming-events.open-event {
+	background: rgba(68, 83, 99, .6);
+}
+
+.upcoming-events h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	transform: skewX(15deg);
+	@media screen and (max-width: 50rem) {
+		font-size: 2rem;
+	}
+	@media screen and (max-width: 40rem) {
+		font-size: 1.5rem;
+		transform: skewX(10deg);
+	}
+	@media screen and (max-width: 30rem) {
+		font-size: 1.2rem;
+		transform: skewX(9deg);
+	}
+	@media screen and (max-width: 20rem) {
+		font-size: 1rem;
+	}
+}
+
+
+.upcoming-events h2 a {
+	padding: .5rem;
+}
+
+.upcoming-events p {
+	font-size: 1.5rem;
+	max-width: 45rem;
+	margin-left: auto;
+	margin-right: auto;
+	transform: skewX(15deg);
+	@media screen and (max-width: 50rem) {
+		font-size: 1.3rem;
+	}
+	@media screen and (max-width: 40rem) {
+		font-size: 1rem;
+		transform: skewX(10deg);
+	}
+	@media screen and (max-width: 30rem) {
+		font-size: .9rem;
+		transform: skewX(9deg);
+	}
+}

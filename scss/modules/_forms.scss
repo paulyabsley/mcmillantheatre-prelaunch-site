@@ -1,0 +1,151 @@
+.frm {
+	border-radius: .5rem;
+	font-family: $font-family--thin;
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: left;
+	width: 70%;
+
+	@media screen and (max-width: 50rem) {
+		width: 85%;
+	}
+
+	@media screen and (max-width: 40rem) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: 40rem) {
+		padding:1rem .5rem;
+	}
+}
+
+.frm__row {
+	&:first-of-type {
+		//border-radius: .4rem .4rem 0 0;
+		padding-bottom: 0;
+	}
+	background: $building-white;
+	color: $building-grey;
+	padding: .8rem .5rem 0 .5rem;
+	&:last-of-type {
+		padding-bottom: 1.5rem;
+	}
+
+	@media screen and (max-width: 20rem) {
+		padding: 0 .5rem;
+
+	}
+}
+
+.frm__lbl {
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: 1.3rem;
+	margin-right: .5rem;
+	width: 25%;
+	text-align: right;
+	vertical-align: bottom;
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.3rem;
+		width: 20%;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.1rem;
+		margin-right: .3rem;
+		width: 25%;
+	}
+
+	@media screen and (max-width: 20rem) {
+		font-size: 1rem;
+		margin-right: 0;
+		text-align: left;
+		width: 100%;
+	}
+}
+
+.frm__inpt {
+	background: $building-white;
+	border: none;
+	border-bottom: 1px solid $building-grey;
+	color: darken($building-grey, 20%);
+	font-family: $font-family--thin;
+	font-size: 1.5rem;
+	padding: .3rem .5rem .2rem;
+	width: 60%;
+
+	// Remove rounded corners in ios
+    -webkit-appearance: none;
+    border-radius: 0;
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.3rem;
+		padding: .3rem .3rem .2rem;
+		width: 70%;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.1rem;
+		padding: .3rem .3rem .2rem;
+		width: 70%;
+	}
+
+	@media screen and (max-width: 20rem) {
+		font-size: 1rem;
+		width: 100%;
+	}
+}
+
+.frm__btn {
+	background: $building-red;
+	border: none;
+	//border-radius:0 0 .4rem .4rem;
+	color: $building-white;
+	cursor: pointer;
+	font-family: $font-family--thin;
+	font-size: 2rem;
+	margin: 0; // ios webkit fix
+	padding: 1rem;
+	transition: background .2s ease-in-out;
+	width: 100%;
+
+	&:hover {
+		background: darken($building-red, 10%);
+	}
+
+	@media screen and (max-width: 40rem) {
+		font-size: 1.5rem;
+	}
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.3rem;
+		padding: .8rem;
+	}
+
+	@media screen and (max-width: 20rem) {
+		font-size: 1rem;
+	}
+}
+
+.frm__success {
+	background: $state-success;
+}
+
+.frm__error {
+	background: $state-error;
+}
+
+.frm__success,
+.frm__error {
+	animation: fadein 1.5s;
+	font-family: $font-family--italic;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	padding: .5rem;
+	text-align: center;
+
+	@media screen and (max-width: 30rem) {
+		font-size: 1.2rem;
+	}
+}
